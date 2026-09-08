@@ -1,0 +1,129 @@
+/*Style for OTP Component*/
+
+.HomeContainer {
+  width: 100%;
+  height: 100lvh;
+  background-color: #f0f3f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.ContainerApp {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.ContentDatas {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+
+.ContentDatas .NavTitle {
+  display: flex;
+  padding: 18px 0;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.ContentDatas .Buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px 0;
+  border-width: 0;
+  border-style: solid;
+  border-color: #b6b5bc;
+  border-bottom-width: 1px;
+}
+
+.ContentDatas .ReloadingBtn {
+  background-color: #227ABD;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 0 0 5px #f0f3f8;
+}
+
+.ContentDatas .ReloadingBtn:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+.ContentDatas .NavTitle h1 {
+  color: #11181c;
+  font-size: 1.1em;
+  font-family: poppinBold;
+}
+
+.ContainerDatasApp {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  gap: 20px;
+}
+
+.CardContainer {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.FilterList {
+  flex-grow: 1;
+  height: auto;
+}
+
+.FilterList .containerItems {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.FilterList .Title {
+  color: #9ba1a6;
+  font-size: .9em;
+  font-family: poppinRegular;
+}
+
+/*List Users*/
+
+.CardContainer .UserList{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+  padding: 0 20px;
+}
+
+.CardContainer .Error{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+/*Medias Querries*/
+@media screen and (min-width: 550px) {
+  .ContentDatas .NavTitle .Buttons .Filter:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
